@@ -61,6 +61,7 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+  height: 300;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -70,6 +71,35 @@ footer {
     height: auto;
   }
 }
+
+            .dropbtn {
+    background-color: rgb(121, 20, 216);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+        
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(211, 211, 211);
+    min-width: 10px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
 </style>
 </head>
 
@@ -78,27 +108,56 @@ footer {
 
     <header>
       <h2>  Virtuelles Schülerpraktikum 2022</h2> 
-    <img src="Accenturelogo.png" width="300" height="100">
+    <img src="Accenture_logo.svg" width="300" height="100">
     </header>
     
     <section>
       <nav>
         <ul>
-          <li><a href="#">1.Woche</a></li>
-          <li><a href="#">2.Woche</a></li>
-          <li><a href="#"></a></li>
+          <li><div class="dropdown">
+            <button class="dropbtn">1.Woche</button>
+            <div class="dropdown-content">
+              <a href="https://www.website.com">Christopher</a>
+          </div>
+          </li>
+          <br>
+          <li>
+          <div class="dropdown">
+            <button class="dropbtn">2.Woche</button>
+            <div class="dropdown-content">
+              <a href="https://www.website.com">Christopher</a>
+                 </div>
+            </div>
+                </li>
+          <br>
+          <div class="dropdown">
+            <button class="dropbtn">Teilnehmerliste</button>
+            <div class="dropdown-content">
+     
+    <a href="https://www.website.com">Christopher</a>
+    <a href="https://www.website.com">Johann</a>
+    <a href="https://www.website.com">Felix</a>
+    <a href="https://www.website.com">Lulu</a>
+    <a href="https://www.website.com">Maximilian</a>
+    <a href="https://www.website.com">Jenifer</a>
+    <a href="https://www.website.com">Mikail</a>
+    <a href="https://www.website.com">Kristina</a>
+    <a href="https://www.website.com">Jule</a>
+    <a href="https://www.website.com">Simon</a>
+            </div>
+        </div>
         </ul>
       </nav>
       
       <article>
         <h1></h1>
-        <p></p>
-        <p></p>
+        <p>In den zwei abwechslungsreichen Wochen des Schülerpraktikums konnten die Schüler*innen verschiedene Bereiche des Projektmanagment und des Programings´s bei Accenture kennenlernen.</p>
+        <p>In der zweiten Woche konnten wir dann unsere neu erlernten Skills und Fähigkeit in einigen kleineren Projekten anwenden.</p>
       </article>
     </section>
     
     <footer>
-      <p>Footer</p>
+      <p></p>
     </footer>
     
 
